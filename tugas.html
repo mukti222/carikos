@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                .right{
+                width: 75%;}}}
+
+        .bignav{
+            padding: 60px;
+            background-color: rgb(1, 188, 188);
+            text-align: center;
+            font-size: 20px;
+            color: azure;
+            border: 5px solid black;
+        }
+
+        nav{
+            background-color: gold;
+            padding: 5px;
+            top: 0;
+            position: sticky;
+            opacity: 80%;
+            border-radius: 0px 0px 10px 10px;
+            font-weight: 20px;
+        }
+
+        nav li{
+            display: inline-block;
+            list-style-type: none;
+            margin-right: 20px;
+            position: sticky;
+        }
+
+        nav a{
+            font-size: 18px;
+            font-weight: 50px;
+            text-decoration: none;
+            color: black;
+            margin-left: 20px;
+            font-family: calibri;
+            transition-delay: 0.4s;
+            transition: .2s ease-in-out;
+        }
+
+        nav a:hover{
+            background-color: #087087;
+            padding: 20px;
+            color: white;
+            border-radius: 1px 1px 10px 10px;
+        }
+
+        nav a:active{
+            background-color: #087087;
+            padding: 30px;
+            color: white;
+            border-radius: 1px 1px 10px 10px;
+        }
+
+        main img{
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        main{
+            margin-top: 15px;
+        }
+
+        h1,h2 {
+            font-family: Calibri;
+            font-weight: bold;
+            font-size: 60px;
+            color: violet;
+            background-color: rgb(1, 188, 188);
+            margin: 0px;
+            color: gold;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        footer{
+            background-color: violet;
+            color: white;
+            padding: 10px;
+            font-weight: 200px;
+            border: 5px solid black;
+            border-radius: 20px;
+        }
+
+        .container{
+            width: 100%;
+            margin-inline: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .right{
+            width: 25%;
+            float: right;
+        }
+
+        .left{
+            text-align: center;
+            width: 75%;
+            float: left;
+        }
+
+        .card{
+            border: 5px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: rgb(255, 146, 113);
+            margin-bottom: 15px;
+        }
+
+        .card1{
+            border: 5px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            margin-left: 30px;
+            background-color: rgb(255, 255, 137);
+            border-radius: 15px;
+        }
+
+        #s1{
+            background-color: #087087;
+            margin: 0px;
+            color: gold;
+        }
+
+        #side{
+            background-color: #00c7dd;
+            color: black;
+            padding: 20px;
+            border: 5px solid black;
+            font-weight: bolder;
+            border-radius: 5px;
+            font-family: Calibri;
+        }
+
+
+        h6{
+            color: black;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    <header style="display: inline;">
+        <div class="bignav">
+            <h1 >FOTOGRAFI PEMANDANGAN</h1>
+            <p>Website ini dibuat untuk menyimpan foto foto pemandangan yang bagus dan bisa dijadikan wallpaper</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#s1">Page 1</a></li>
+                <li><a href="#s2">Page 2</a></li>
+                <li><a href="#s3">Page 3</a></li>
+                <li style="font-weight:1000; font-family: Calibri; font-size:large;"> &larr;Click Here</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="left">
+            <article class="card">
+                <section>
+                    <h2 id="s1">
+                        FOTOGRAFI PERTAMA</h2>
+                    <img src="img/1.jpeg" alt="pemandangan">
+                    <p>Pemandangan laut berwarna biru yang sangat bagus dan tampak menyatu dengan langit</p>
+                </section>
+            </article>
+
+            <article class="card">
+                <section>
+                    <h2 id="s2">FOTOGRAFI KEDUA</h2>
+                    <img src="img/2.png" alt="pemandangan">
+                    <p>Pemandangan resort seperti tempat rekreasi hotel yang menyatu dan dibangun di dekat bukit sehingga terasa suasana alamnya</p>
+                </section>
+            </article>
+
+            <article class="card">
+                <section>
+                    <h2 id="s3">
+                        FOTOGRAFI KETIGA
+                    </h2>
+                    <img src="img/3.jpg" alt="">
+                    <p>Sebuah foto yang menunjukan beberapa Gedung yang digunakan untuk rekreasi di tengah hutan dan alam yang hijau</p>
+                </section>
+            </article>
+        </div>
+
+        <aside class="right">
+            <article class="card1">
+                <section>
+                    <h3 id="side">Identitas Diri</h3>
+                    <img src="img/Untitled.png" alt="gambarku" border="5px solid black">
+                    <p>Nama     : Haryo Mukti Wibowo</p>
+                    <p>Alamat   : Salatiga </p>
+                    <p>Tgl Lahir: 2 Desember 2002</p>
+                    <p>Hobi     : Bermain Game</p>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+
+
+
+
+    <footer>
+        <h2>
+            Website Ini dibuat dengan Sepenuh Hati
+        </h2>
+        <h6>
+            copyright 2023. Haryo Mukti
+        </h6>
+    </footer>    
+</body>
+</html>
