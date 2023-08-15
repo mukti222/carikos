@@ -45,15 +45,17 @@
     margin-left: 50px;
     margin-right: 400px;
 }
-
-.buttonnav1{
-    padding: 4px; padding-left: 10px; margin-right: 10px;
+.kosong{
+    width: 50%;
+}
+.btn1{
+    padding: 4px; padding-left: 10px; margin-right: 1px;
     background-color: white;
     border: 2px solid #1B7C6A;
     border-radius: 10px;
     font-size: large
 }
-.buttonnav2{
+.btn2{
     padding: 4px; padding-left: 10px;
     background-color: #28A49C;
     color: white;
@@ -90,19 +92,19 @@ nav a{
     transition: .2s ease-in-out;
 }
 
-nav a:hover{
+/* nav a:hover{
     background-color: #087087;
     padding: 20px;
     color: white;
     border-radius: 1px 1px 10px 10px;
-}
+} */
 
-nav a:active{
+/* nav a:active{
     background-color: #087087;
     padding: 30px;
     color: white;
     border-radius: 1px 1px 10px 10px;
-}
+} */
 
 main img{
     width: 100%;
@@ -113,6 +115,7 @@ main img{
 
 main{
     margin-top: -2px;
+    height: 100%;
 }
 
 h1,h2 {
@@ -135,21 +138,23 @@ footer{
     border-radius: 20px;
 }
 
-.container{
+.ctner{
     width: 100%;
     margin-inline: auto;
     display: flex;
     justify-content: space-around;
+    height: 150%;
 }
 
 .right{
-    width: 25%;
+    width: 15%;
     float: right;
 }
 
 .left{
     text-align: center;
-    width: 80%;
+    width: 85%;
+    height: 100%;
     float: left;
 }
 
@@ -159,32 +164,37 @@ footer{
     background-color: rgb(255, 255, 255);
     margin-bottom: 0px;
     height: 100px;
+    width: 100%;
 }
 
-.catalog{
+.catalog1{
     border-bottom: 1px solid rgb(26, 108, 99);
     border-left: 1px solid rgb(26, 108, 99);
     border-right: 1px solid rgb(26, 108, 99);
     padding: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(175, 199, 191);
     margin-bottom: 0px;
-    height: 1000px;
+    width: 100%;
     display: flex;
     justify-content: center;
+    height: 2000px;
 }
 
 .cat1{
     border: 1px solid black;
     flex-direction: row;
+    width: 33vh;
 }
 
 .catalogchild{
     flex-direction: row;
     border: 1px solid black;
-    width: 300px;
-    margin: 20px;
-    height: 300px;
-
+    width: 350px;
+    margin: 30px;
+    margin-bottom: 40p;
+    height: 400px;
+    padding: 30px ;
+    border-radius: 20px ;
 }
 
 .card{
@@ -196,6 +206,13 @@ footer{
 }
 
 .card1{
+    border-bottom:  1px solid rgb(48, 111, 81);
+    border-right:  1px solid rgb(48, 111, 81);
+    height: 500px;
+    background-color: rgb(251, 251, 251);
+}
+
+.card2{
     border-bottom:  1px solid rgb(48, 111, 81);
     border-right:  1px solid rgb(48, 111, 81);
 height: 300px;
